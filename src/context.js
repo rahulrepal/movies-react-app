@@ -17,6 +17,28 @@ const Reducer = (state,action) =>
 
          }
 
+         case 'S_GENRE':
+         return {
+
+            ...state,
+            searches:state.movies.filter(
+                movie =>
+                action.payload!==" " &&action.payload!==""&&movie.genre!=null?movie.genre.toUpperCase().indexOf(action.payload)!==-1:null
+            )
+
+         }
+
+         case 'S_DIRECTOR':
+         return {
+
+            ...state,
+            searches:state.movies.filter(
+                movie =>
+                action.payload!==" " &&action.payload!==""&&movie.director!=null?movie.director.toUpperCase().indexOf(action.payload)!==-1:null
+            )
+
+         }
+
          case 'SET_CINDEX':
         return {
             ...state,

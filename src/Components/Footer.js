@@ -2,7 +2,7 @@ import React from 'react';
 
 const footer =(props)=>{
     return(
-        <div className="fixed-bottom mt-auto  jumbotron h-20 mb-0">
+        <div className="mt-auto  fixed-bottom jumbotron h-20 mb-0">
         <div className="container">
       
         

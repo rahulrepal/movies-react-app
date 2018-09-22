@@ -2,7 +2,7 @@ import React from 'react';
 
 const about =(props)=>{
     return(
-        <div className="container mt-4">
+        <div className="container mt-4 pb-5">
             <div className="display-4 text-center ">About</div>
             <p className="lead mt-3">
                 Hello Everyone, I am Rahul. I am currently learning React Js and this is the
@@ -16,7 +16,7 @@ const about =(props)=>{
                 </span>
             </p>
             <p>Things That I Have Learnt while developing this app</p>
-            <ul>
+            <ul className="pb-5">
                 <li>React Js</li>
                 <li>Routing In React</li>
                 <li>Context API</li>

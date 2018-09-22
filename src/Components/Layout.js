@@ -5,6 +5,7 @@ import Footer from './Footer';
 import About from './About';
 import Contacts from './Contacts';
 import MoviesMiddle from './Movies/MoviesMiddle';
+import Discover from '././Discover/Discover';
 
 class layout extends Component {
   render() {
@@ -15,6 +16,7 @@ class layout extends Component {
         
         <Switch>
           <Route exact path="/" component={MoviesMiddle} />
+          <Route exact path="/discover" component={Discover} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contacts" component={Contacts} />
 
